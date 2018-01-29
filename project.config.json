@@ -1,0 +1,61 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wx35cf09bde1ed6dc4",
+	"projectname": "88bell_2018",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "服务器领取页面",
+					"pathName": "pages/command/command",
+					"query": "scene=T1516350402263",
+					"scene": "1011"
+				},
+				{
+					"id": 1,
+					"name": "本地领取页面",
+					"pathName": "pages/command/command",
+					"query": "scene=T1516345190162",
+					"scene": "1011"
+				},
+				{
+					"id": 2,
+					"name": "本地领取页面",
+					"pathName": "pages/share/share",
+					"query": "REDTASK_ID=T1516960242763",
+					"scene": "1024"
+				},
+				{
+					"id": 3,
+					"name": "upload",
+					"pathName": "pages/custom/custom",
+					"query": "REDTASK_ID=T1516960242763",
+					"scene": "1024"
+				}
+			]
+		}
+	}
+}

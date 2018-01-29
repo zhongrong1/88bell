@@ -1,0 +1,52 @@
+<!--未领取红包样式-->
+<view class="command">
+  <!--发布人的头像和微信名称-->
+  <view class="sendtx"><image src="{{taskInfo.AVATARURL}}"/></view>
+  <view class="snick">{{taskInfo.USERNAME}}</view>
+  <!--红包口令-->
+  <view class="password">{{taskInfo.CONTENT}}</view>
+  <!--说口令按钮（未领取红包）-->
+  <button bindtouchstart="mytouchstart" bindtouchend="mytouchend" type="primary" class="saypass" 
+    wx:if="{{flag=='1'}}">{{btnStr}}</button>
+  <button type="primary" class="saypass" disabled="true" 
+    wx:if="{{flag=='3'}}">{{btnStr}}</button>
+  <!--已经领取红包显示金额-->
+  <view wx:if="{{flag=='2'}}" class="allmoney"><text class="moneysize">{{btnStr}}</text> 元</view>
+  <!--提现转发-->
+  <view class="function">
+    <text class="func-item" bindtap="getmoney">去提现</text>
+    <text class="func-item" bindtap="sendpass">发口令</text>
+    <button size='mini' plain="true" class="share" open-type="share" style='border:0px;color:#fff;font-size:18px;'>去转发</button>
+  </view>
+</view>
+<!--底部领取记录-->
+<view class='myrecord'>
+  <view style="padding:10px;">
+  <view>共<text>{{taskInfo.MONEY/100}}</text>元，领取<text>{{taskInfo.NEXTNUM}}/{{taskInfo.COUNT}}</text></view>
+  <!--未领取显示提示语句-->
+  <view class="norecord" style="display:none;">未领取的金额，将于24小时后退至余额</view>
+  <!--有领取记录显示-->
+  <view class="hasrecord">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="record-item">
+      <!--领取人、说的口令-->
+      <image class="receiptorpic lt" src="{{item.AVATARURL}}"/>
+      <view class='lt receiptor'>
+        <view class="receive-nick">
+          {{item.USERNAME}}
+          <image src="../../images/s2.png" id="usergender" wx:if="{{item.GENDER=='男'}}" />
+          <image src="../../images/s1.png" id="usergender" wx:if="{{item.GENDER=='女'}}" />
+        </view>
+        <view class="receive-pass lt" bindtap='playVoice' data-voice="{{item.VOICEPATH}}" 
+          data-vtime="{{item.VTIME?item.VTIME:'0'}}">{{item.VTIME?item.VTIME:"0"}}"</view>
+      </view>
+      <!--右侧金额、时间-->
+      <view class="rt" class="receive-info">
+        <view class="receive-money">{{item.RED/100}}元</view>
+        <view class="receive-time">{{item.TIME}}</view>
+      </view>
+    </view>
+    </block>
+  </view>
+  </view>
+</view>

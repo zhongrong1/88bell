@@ -1,0 +1,11 @@
+page{background:#F1F1F1;}
+.money{margin:10px;margin-top:15px;border:1px solid #fff;border-radius:5px;background:#fff;padding:15px;}
+.wbalance{color:#919191;}
+.balance{font-size:40rpx;padding-left:100rpx;color: green;}
+.txje{margin-top:60rpx;}
+.deposit{position:relative;margin-bottom:30rpx;margin-top:10px;}
+.deposit .icon{position:absolute;font-size:50rpx;}
+.deposit input{border-bottom: 1px solid #E3E3E3;height:100rpx;padding-left:60rpx;font-size:60rpx;}
+.btncash{margin-top:40rpx;margin-bottom:15px;}
+.tips{font-size:24rpx;color:#919191;}
+.center{text-align:center;}

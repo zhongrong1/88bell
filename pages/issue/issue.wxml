@@ -1,0 +1,17 @@
+<view class="wrap">
+  <block wx:for="{{qtArray}}" wx:key="index">
+    <view class="q-item">
+      <view  id="{{item.id}}" class="question {{item.qtColor?'showque':'hideque'}}" bindtap="clickTab">
+        <text  id="{{item.id}}" class="lt">{{item.question}}</text><text class="rt icon-m" bindtap="clickTab" id="{{item.id}}">≡</text>
+      </view>
+      <view class="answer {{item.showAs?'show':'hide'}}">{{item.answer}}</view>
+    </view>
+</block>
+</view>
+<view class="report">
+ <text bindtap="report">举报</text>
+</view>
+<view style='width: 100%;text-align: center;'>
+  <button size="mini" open-type="contact"  wx:if="{{kf}}"
+      style='border:0px;font-size:14px;color: #173177;background: none;'>进入客服会话</button>
+</view>

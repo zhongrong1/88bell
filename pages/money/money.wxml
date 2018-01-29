@@ -1,0 +1,18 @@
+<view class="money">
+<form bindsubmit="withdrawals" report-submit="true" bindreset="bindreset">
+  <view>
+    <text>我的余额</text>
+    <text class="wbalance"><text class="balance">{{money}}</text> 元</text>
+  </view>
+  <view class="txje"><text>提取数量</text></view>
+  <view class="deposit">
+    <text class="icon">￥</text>
+    <input bindinput="textinput" name="outMoney" data-type="1" type="digit" maxlength='8' value="{{outMoney}}"></input>
+  </view>
+  <view class="tips">
+    <text>提取到微信钱包</text>
+  </view>
+  <button formType="submit" disabled="{{disabled}}" type="primary" class="btncash">确认提取</button>
+  <view class="tips center">请留意微信钱包余额</view>
+</form>
+</view>

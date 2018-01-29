@@ -1,0 +1,24 @@
+
+<view style='100%;'>
+  <view class="vl">
+        <image class="vl" style='display:{{disv}}' src="{{filePaths}}" mode="aspectFill"/>  
+        <button type='primary' style="margin-top: 5%;font-size:28rpx;" bindtap="chooseimage">获取图片</button> 
+  </view>
+  <view class="vl">
+    <input class="input-text" bindinput ='titleInput' placeholder='请输入标题' style='padding: 2px 0px;'></input>
+  </view>
+
+  <view class="vl">
+    <textarea class="input-text"  bindinput ='contentInput' placeholder='请输入内容'
+      style='height:100px;width: 100%;padding-top: 5px;'></textarea>
+  </view>
+
+  <view class="vl" style='text-align: center;'>
+  <button type='primary' size='default' style='font-size:28rpx;' bindtap="savefile">确定上传</button>
+  </view>
+</view>
+
+
+
+
+

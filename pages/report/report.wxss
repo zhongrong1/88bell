@@ -1,0 +1,69 @@
+/* pages/report/report.wxss */
+.head{
+    padding: 80rpx;
+    line-height: 1;
+}
+.body{
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    overflow: hidden;
+}
+.report .title{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #DCDCDC;
+  background-color: #F0F0F0;
+}
+.report .title .text{
+  line-height: 40px;
+  color: #555;
+  font-size: 16px;
+  padding-left: 15px;
+  
+}
+.dis{
+  width: 92%;
+  margin: 0 auto;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #DCDCDC;
+  font-size: 16px;
+}
+.dis radio{
+  float: right;
+}
+.contact .title{
+  width: 100%;
+  background-color: #F0F0F0;
+  color: #555;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.contact .title text{
+  padding-left: 15px;
+}
+.contact .phone{
+  height: 45px;
+  line-height: 45px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.contact{
+  border-bottom: 1px solid #DCDCDC;
+}
+.contact .phone text{
+  font-size: 16px;
+  float: left;
+}
+.contact .phone input{
+  font-size: 16px;
+  line-height: 45px;
+  height: 45px;
+  padding-left: 20px;
+}
+.btv{
+  padding: 20px;
+}

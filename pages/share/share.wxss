@@ -1,0 +1,10 @@
+page{background:url(http://v.6le.com/uploadFiles/imgs/hbbg.jpg) no-repeat;width:100%;background-size:cover;}
+.center{text-align:center;}
+.sendtx image{width:50px;height:50px;border-radius:4px; margin-top:15px;}
+.rcode{margin-top:30px;margin-bottom:30px;}
+.rcode image{width:120px;height:120px;border-radius:63px;border:6px solid #E8CE99;}
+.share{clear:both;width:95%;box-sizing:border-box;border-radius:5px;margin:0 auto;background:#fff;padding:25px 15px 10px 15px;}
+.share button{margin-bottom:15px;}
+.stitle{color:#FBECB5;}
+.password{color:#FBECB5;font-size:25px; margin-top:20px;font-weight:bold;}
+.try{color:#727272;font-size:14px;font-weight: bold;}

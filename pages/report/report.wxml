@@ -1,0 +1,31 @@
+<!--pages/report/report.wxml-->
+<view class="report">
+<form bindsubmit="report">
+  <view class="title">
+    <text class="text">请选择举报原因</text>
+  </view>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <block wx:for="{{arr}}" wx:key="index">
+      <view class="dis">
+          <label class="radio">
+            <text>{{item.name}}</text>
+            <radio value="{{item.name}}" data-id="{{item.id}}" checked="{{item.checked}}"/>
+          </label>
+      </view>
+    </block>
+  </radio-group>
+  <view class="contact">
+    <view class="title">
+      <text>请填写您的个人信息,方便我们联系您</text>
+    </view>
+    <view class="phone">
+      <text>手机号</text>
+      <input bindinput="textinput" type="number" placeholder="您的手机号码(选填)"></input>
+    </view>
+  </view>
+
+  <view class="btv">
+    <button type="primary" form-type="submit" hover-class="button-hover">提交</button>
+  </view>
+</form>
+</view>

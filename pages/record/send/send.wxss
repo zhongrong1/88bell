@@ -1,0 +1,25 @@
+/* pages/record/record.wxss */
+page{background: #F1F1F1;}
+.record{width:100%;height:100%;}
+.rtab{width:100%;height:45px; background:#fff;font-weight:bold;flex-direction:row;line-height:42px;color:#A1A1A1;}
+.flex-item{float:left;width:50%;text-align:center;}
+.rselect{color:#D44529;}
+.rnoselect{color:#A1A1A1;}
+.blshow{width:50px;margin:0 auto;height:1px;border-bottom:3px solid #D44529;}
+.blhide{border-bottom:3px solid #fff;}
+.rcontent{width:100%;background:#F5F6F5;padding:15px 0 35px 0;}
+.userinfo{text-align:center; }
+.user_avator{width:60px;height:60px;border-radius:30px;}
+.user_nick{display:block; margin-top:15px;}
+.uname{color:#475D8A;}
+.infor{margin-top:25px;}
+.ititle{color:#A1A1A1;clear:both;overflow:hidden;}
+.data{color:#000000;font-size:25px;clear:both;overflow:hidden;margin-top:3px;font-weight:bold;}
+.redlist{background:#fff;font-size:14px;}
+.rlist-item{padding:11px 10px;border-bottom:1px solid #DFDFDF;}
+.lt{float:left;}
+.rt{float:right;}
+.bold{font-weight:bold;}
+.clear{clear:both;overflow:hidden;}
+.ritem2{padding-top:5px;color:#616161;}
+.noline{border-bottom:none;}

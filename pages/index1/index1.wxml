@@ -1,0 +1,19 @@
+<view class="bg"></view>
+<view class="content">
+  <view class="jdname bline">
+    <view class="name">芭芭贝尔海景酒店</view>
+    <view class="address">北海涠洲岛滴水村82号</view>
+  </view>
+  <view class="bline">
+    <view class="jdtitle">酒店介绍</view>
+    <view class="jddetail">芭芭贝尔主题酒店于2015年6月正式开业，酒店坐落于最热闹的“滴水丹屏”景点旁。酒店拥有特色客房27间，由知名设计师精心打造，每间客房风格各异。浪漫唯美的地中海，风情万种的东南亚，独特个性的工业风，热情洋溢的西部混搭等各式各样的装修风格，浪漫大床和无敌海景无处不在的独特创意一切皆为您！</view>
+  </view>
+  <view class="bline">
+    <view class="jdtitle">周边及交通</view>
+    <image src="/images/map.png" style='width:100%;padding-top:10px;'/>
+    <view class="jddetail">乘船指南：飞鱼号、飞逸号、飞达号、北邮号、飞跃168号、北部湾号</view>
+  </view>
+  <view style='padding-top:15px;'>
+    <button type='default' bindtap='clickmore'>点击查看更多</button>
+  </view>
+</view>

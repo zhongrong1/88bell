@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="index">
+  <form bindsubmit="sendRed" report-submit="true">
+    <view id="user" style="background-image:url({{logo}})">
+      <view id="user_info">
+        <image id="user_ava" class="user_avator" src="{{user.avatarUrl}}" />
+        <text id="user_nn">{{user.nickName}}</text>
+        <image src="../../images/s2.png" id="usergender" wx:if="{{user.gender==1}}" />
+        <image src="../../images/s1.png" id="usergender" wx:if="{{user.gender==2}}" />
+        <text id="user_sig">{{user.signature1}}</text>
+      </view>
+    </view>
+
+    <view>
+      <view style="padding:20rpx 50rpx 50rpx 50rpx;">
+        <view style="padding-top:30rpx;">
+          <text style="width:25%;float:left;text-align:left;margin-left:20rpx;font-size: 16px;">说点什么</text>
+          <input name="content" bindinput="textinput" data-type="1" placeholder="想说的话" value='{{content}}'
+            style="border-bottom:1rpx solid #eee;width:55%;padding:0rpx 0rpx 5rpx 30rpx;font-size: 16px;"></input>
+        </view>
+        <view>
+          <text style='font-size:24rpx;margin-left:24rpx;color: #b2b2b2;'>小伙伴们说对暗号就能获取随机的福利</text>
+        </view>
+        <view style="padding-top:30rpx;">
+          <text style="width:25%;float:left;text-align:left;margin-left:20rpx;font-size: 16px;">赏金(元)</text>
+          <input bindinput="textinput" data-type="2" type='number' placeholder="输入金额" value='{{money}}'
+            style="border-bottom:1rpx solid #eee;width:55%;padding:0rpx 0rpx 5rpx 30rpx;font-size: 16px;"></input>
+        </view>
+        <view style="padding-top:50rpx;">
+          <text style="width:25%;float:left;text-align:left;margin-left:20rpx;font-size: 16px;">数量(个)</text>
+          <input bindinput="textinput" data-type="3" type='number' placeholder="输入数量" value='{{count}}'
+            style="border-bottom:1rpx solid #eee;width:55%;padding:0rpx 0rpx 5rpx 30rpx;font-size: 16px;"></input>
+        </view>
+        <view style="padding-top:40rpx;font-size: 14px;" wx:if="{{endTimeType}}">
+          <text style="float:left;text-align:left;margin-left:20rpx;font-size: 16px;">有效时间</text>
+          <radio-group class="radio-group" bindchange="radioChange" name="radio">
+            <block wx:for="{{endtimes}}" wx:key="index">
+                <label class="radio" style='padding-left: 5px;'>
+                  <radio value="{{item.time}}" checked="{{item.checked}}" disabled="{{item.disabled}}" 
+                    style='transform:scale(.7)'/>{{item.name}}
+                </label>
+            </block>
+          </radio-group>
+        </view>
+        <view style="padding-top:30rpx;text-align: center;">
+          <text style='font-size: 14px;width:60%;margin: 0 auto;color: #b2b2b2;'>需支付￥<text style='color: red;'>{{serviceChargeShow}}</text>服务费</text>
+          <button type="primary" disabled="{{disabled}}" formType="submit" 
+            style='background-color:#F76260;color:#fff;'>{{btName}}</button>
+        </view>
+        
+      </view>
+    </view>
+  </form>
+</view>

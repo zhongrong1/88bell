@@ -1,0 +1,62 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index1/index1",
+    "pages/money/money",
+    "pages/issue/issue",
+    "pages/command/command",
+    "pages/share/share",
+    "pages/record/receive/receive",
+    "pages/record/send/send",
+    "pages/report/report",
+    "pages/custom/custom",
+    "pages/custom1/custom1",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "芭芭贝尔",
+    "navigationBarTextStyle":"#fbfcfd",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#d33a31",
+    "borderStyle": "white",
+    "backgroundColor": "#f8f8f8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tb1-off.png",
+        "selectedIconPath": "images/tb1-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/record/send/send",
+        "iconPath": "images/tbfm-off.png",
+        "selectedIconPath": "images/tbfm-on.png",
+        "text": "我的记录"
+      },
+      {
+        "pagePath": "pages/money/money",
+        "iconPath": "images/tb2-off.png",
+        "selectedIconPath": "images/tb2-on.png",
+        "text": "余额提现"
+      },
+      {
+        "pagePath": "pages/issue/issue",
+        "iconPath": "images/tb4-off.png",
+        "selectedIconPath": "images/tb4-on.png",
+        "text": "常见问题"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

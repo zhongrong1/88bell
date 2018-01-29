@@ -1,0 +1,48 @@
+<view class="record">
+  <!--选项,我发出的-->
+  <view class="rtab">
+    <view class="clear">
+      <block wx:for="{{rtabArray}}" wx:key="">
+          <view id="{{item.id}}" class="flex-item {{item.changetColor?'rselect':'rnoselect'}}" bindtap="clickTab">{{item.txt}}
+          <view class="{{item.changeColor?'blshow':'blhide'}}"></view></view>
+        </block>
+    </view>
+  </view>
+  <!--中间内容信息-->
+  <view class="rcontent">
+    <!--头像名称-->
+    <view class="userinfo">
+      <image class="user_avator" src="{{user.avatarUrl}}"/>
+      <text class="user_nick"><text class="uname">{{user.nickName}}</text> 共收到</text>
+    </view>
+    <!--数据-->
+    <view class="infor">
+      <view class="flex ititle">
+        <text class="flex-item">金额 (元)</text>
+        <text class="flex-item">数量 （个）</text>
+      </view>
+      <view class="data">
+        <text class="flex-item">{{MONEYALL/100}}</text>
+        <text class="flex-item">{{COUNTALL}}</text>
+      </view>
+    </view>
+  </view>
+  <!--红包口令列表-->
+  <view class="redlist">
+<block wx:for="{{RedMyArray}}" wx:key="index">
+    <view  bindtap="toast" id="{{item.REDTASK_ID}}"  class="rlist-item bline">
+      <view class="clear">
+        <view class="lt clear">
+          <image src="{{item.AVATARURL}}" class="rptor"/>
+          <view class="lt pl10">
+            <view>{{item.NICKNAME}}</view>
+            <text class="cr61">{{item.TIME}}</text>
+          </view>
+        </view>
+        <view class="rt bold">{{item.RED/100}}元</view>
+      </view>
+     </view>
+  </block>  
+
+  </view>
+</view>

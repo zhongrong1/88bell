@@ -1,0 +1,17 @@
+<view class="center">
+  <!--发起口令人的头像-->
+  <view class="sendtx"><image src='{{userInfo.avatarUrl}}'/></view>
+  <view class="stitle">发了一个手气PK比拼</view>
+  <!--口令-->
+  <view class="password">{{content}}</view>
+  <!--口令二维码-->
+  <view class="rcode"><image src='{{wxcode}}'/></view>
+  <!--分享-->
+  <view class="share">
+    <button type="primary" open-type="share">转发到群聊</button>
+    <button type="default" bindtap="friend">谢谢老板吧</button>
+    <button type="default" bindtap="tocustom">生成自定页面</button>
+    <!--回到发口令页面-->
+    <text class="try" bindtap="stry">我也试一试--></text>
+  </view>
+</view>
